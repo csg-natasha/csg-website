@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Caregiver's Survival Guide — For Women Caring for a Parent with Cognitive Decline</title>
+  <meta name="description" content="A one-stop knowledge share for women carrying a parent through a diagnosis of cognitive decline. Investigate the diagnosis. Take care of yourself. You are not alone.">
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="The Caregiver's Survival Guide">
+  <meta property="og:description" content="A one-stop knowledge share for women carrying a parent through a diagnosis of cognitive decline. By Natasha Shevelyov.">
+  <meta property="og:locale" content="en_US">
+  <!-- TODO: add og:url and og:image once you have the domain live and a hero image -->
+
+  <!-- Twitter / X card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Caregiver's Survival Guide">
+  <meta name="twitter:description" content="A one-stop knowledge share for women carrying a parent through a diagnosis of cognitive decline.">
+
+  <!-- Favicon placeholder — replace favicon.ico in the repo root once you have one -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  <!-- Schema.org structured data — helps search engines understand the brand -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "The Caregiver's Survival Guide",
+    "description": "A one-stop knowledge share for women carrying a parent through a diagnosis of cognitive decline.",
+    "founder": {
+      "@type": "Person",
+      "name": "Natasha Shevelyov"
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #fbf8f4;
+      --card: #ffffff;
+      --ink: #1e2532;
+      --ink-soft: #4a5466;
+      --accent: #7d4e2a;
+      --accent-soft: #b48867;
+      --rule: #e8e1d6;
+      --tag: #f1ebde;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+    }
+    .serif { font-family: Georgia, "Times New Roman", serif; }
+
+    /* ----- Navigation ----- */
+    nav.topnav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(251, 248, 244, 0.95);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--rule);
+      padding: 14px 24px;
+    }
+    .nav-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .nav-brand {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 700;
+      font-size: 17px;
+      color: var(--ink);
+      text-decoration: none;
+    }
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      align-items: center;
+    }
+    .nav-links a {
+      color: var(--ink-soft);
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .nav-links a:hover { color: var(--accent); }
+    .nav-cta {
+      background: var(--accent);
+      color: white !important;
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .nav-cta:hover { background: var(--ink); }
+    @media (max-width: 640px) {
+      .nav-links a:not(.nav-cta) { display: none; }
+    }
+
+    /* ----- Layout ----- */
+    .wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+    section {
+      padding: 60px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    section:last-of-type { border-bottom: 0; }
+
+    /* ----- Hero ----- */
+    .hero {
+      padding: 80px 0 50px;
+    }
+    .hero h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 38px;
+      line-height: 1.18;
+      margin: 0 0 32px;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: var(--accent);
+    }
+    .hero p {
+      font-size: 18px;
+      margin: 0 0 18px;
+    }
+    .hero-cta {
+      margin-top: 36px;
+      padding: 22px 26px;
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-radius: 12px;
+    }
+    .hero-cta strong {
+      display: block;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 18px;
+      margin-bottom: 6px;
+      color: var(--accent);
+    }
+    .hero-cta a {
+      display: inline-block;
+      margin-top: 10px;
+      background: var(--accent);
+      color: white;
+      padding: 12px 22px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+    }
+    .hero-cta a:hover { background: var(--ink); }
+
+    /* ----- Sections ----- */
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 28px;
+      color: var(--ink);
+      margin: 0 0 24px;
+      letter-spacing: -0.005em;
+    }
+    h2 .accent { color: var(--accent); }
+    p { margin: 0 0 18px; }
+    p strong { color: var(--ink); }
+
+    /* ----- Stats section ----- */
+    .stats {
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-top: 12px;
+    }
+    .stat {
+      padding: 14px 0;
+      border-bottom: 1px dotted var(--rule);
+    }
+    .stat:last-child { border-bottom: 0; }
+    .stat-num {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    .stat-src {
+      display: block;
+      color: var(--ink-soft);
+      font-size: 13px;
+      margin-top: 4px;
+    }
+
+    /* ----- Pillars ----- */
+    .pillars {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-top: 8px;
+    }
+    .pillar {
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-radius: 12px;
+      padding: 22px 24px;
+    }
+    .pillar h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      margin: 0 0 8px;
+      font-size: 19px;
+      color: var(--ink);
+    }
+    .pillar p {
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: 15px;
+      line-height: 1.55;
+    }
+    @media (min-width: 720px) {
+      .pillars { grid-template-columns: 1fr 1fr; }
+    }
+
+    /* ----- Email capture ----- */
+    .cta-section {
+      background: var(--tag);
+    }
+    .email-form {
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-radius: 12px;
+      padding: 28px;
+      margin-top: 8px;
+    }
+    .email-form label {
+      display: block;
+      font-size: 14px;
+      color: var(--ink-soft);
+      margin-bottom: 6px;
+    }
+    .email-form input[type="email"] {
+      width: 100%;
+      padding: 14px 16px;
+      font-size: 16px;
+      border: 1px solid var(--rule);
+      border-radius: 8px;
+      font-family: inherit;
+      margin-bottom: 14px;
+    }
+    .email-form input[type="email"]:focus {
+      outline: 2px solid var(--accent-soft);
+      border-color: var(--accent);
+    }
+    .email-form button {
+      background: var(--accent);
+      color: white;
+      border: 0;
+      padding: 14px 24px;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 999px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .email-form button:hover { background: var(--ink); }
+    .email-form .note {
+      margin-top: 12px;
+      font-size: 13px;
+      color: var(--ink-soft);
+    }
+    /* honeypot — hidden field to catch bots */
+    .hp { position: absolute; left: -9999px; width: 1px; height: 1px; }
+
+    /* ----- Footer ----- */
+    footer {
+      background: var(--ink);
+      color: #c5c8cd;
+      padding: 48px 28px;
+      text-align: center;
+      font-size: 13px;
+    }
+    footer .footer-inner {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    footer p { margin: 0 0 14px; }
+    footer .small {
+      font-size: 12px;
+      color: #8a8f97;
+      margin-top: 20px;
+    }
+
+    /* ----- Print ----- */
+    @media print {
+      nav.topnav { display: none; }
+      body { background: white; color: black; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ============ NAVIGATION ============ -->
+<nav class="topnav" aria-label="Primary">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand">The Caregiver's Survival Guide</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#why">Why now</a>
+      <a href="#inside">What's inside</a>
+      <a href="#checklist" class="nav-cta">Get the Checklist</a>
+    </div>
+  </div>
+</nav>
+
+<a id="top"></a>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap">
+    <h1>Before you accept the diagnosis, <em>ask the questions your doctor didn't.</em></h1>
+
+    <p>For ten years I cared for my mother. She had been told it was cognitive decline — <em>it comes with age</em>, they said, again and again — and I took her to every neurologist and specialist I could find, in three states by the end of it. They scanned her head. They scanned it again. They examined her balance, her speech, her memory, her reflexes. What none of them did, in all those years, was scan the rest of her body.</p>
+
+    <p>It turned out my mother had a benign growth in her spinal cord, between T2 and T3, blocking the blood and oxygen on its way to her brain. The balance, the falls, the concussions, the dementia symptoms — all of it had a cause that was sitting four inches below her shoulder blades, treatable, and missed.</p>
+
+    <p>We only found it because she fell, and the hospital, looking for breaks, x-rayed her whole body.</p>
+
+    <p>The reason I am building <strong>The Caregiver's Survival Guide</strong> is so that you do not lose the years I lost figuring this out alone. Not just figuring out what was wrong with my mother — but figuring out how to take care of her, and at the same time, how to take care of <em>me</em>, while it was happening. Because no one tells you that this is two jobs at once, and the second one is the one that nearly breaks you.</p>
+
+    <div class="hero-cta">
+      <strong>Start here.</strong>
+      <p style="margin:0;">Download the Root-Cause Investigation Checklist — the questions to ask, the tests to request, and the moment to push back. Free. One email. No spam.</p>
+      <a href="#checklist">Get the Checklist →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHAT I MADE THIS FOR ============ -->
+<section id="mission">
+  <div class="wrap">
+    <h2>What I made <span class="accent">this</span> for.</h2>
+
+    <p>I want to tell you, plainly, what this is — because I have had enough of caregiver resources that read like brochures, and I think you have too.</p>
+
+    <p>The Caregiver's Survival Guide is a one-stop knowledge share for women carrying a parent through a diagnosis of cognitive decline. <em>Carrying</em> is the word, by the way. There is no other verb that fits.</p>
+
+    <p>It is for two people, not one. It is for the parent you are caring for, and it is for <em>you</em> — and if I had a single sentence to describe what makes this different from anything else you'll find on the subject, it is that I refuse to write only about the first one.</p>
+
+    <p>For the parent in your care, I have spent ten years learning the medical landscape (Western and alternative, both), the home-care landscape, the long-term care landscape, the questions to ask, the tests to push for, the housing options, the products and therapies that helped, and the ones that didn't. All of it lives here. The Root-Cause Investigation framework is the front door — because I will not, in good conscience, let you build your family's next decade around a diagnosis that hasn't been properly investigated.</p>
+
+    <p>And for <em>you</em> — the caregiver, who I see, even if no one else has been seeing you lately — I have spent those same ten years figuring out how a person stays a person while doing this. The vetted alternative-health things I tried (some of which saved me, and a few of which I will tell you to skip). The supplements and the bodywork and the sleep practices and the breath cycles and the small daily rituals that became the difference between a hard day and an unbearable one. The community of women who know exactly what you're carrying, because they're carrying it too. The burnout prevention practices that are not optional — they are infrastructure. The permission, repeated as often as you need to hear it, that you are allowed to take care of yourself, and that doing so is not stealing from your parent. It is the opposite.</p>
+  </div>
+</section>
+
+<!-- ============ WHY NOW ============ -->
+<section id="why">
+  <div class="wrap">
+    <h2><span class="accent">Why this,</span> and why now.</h2>
+
+    <p>I want to take a moment to tell you what I have been watching for the last several years, because if you are here, you have probably been watching it too.</p>
+
+    <p>The number of people receiving a diagnosis of cognitive decline is rising, and rising fast. These are not abstract numbers. These are mothers, fathers, aunts, uncles, neighbors, your friend's mother-in-law, the woman you used to see at the post office.</p>
+
+    <div class="stats">
+      <div class="stat">
+        <span class="stat-num">7.2 million</span> Americans 65+ live with Alzheimer's dementia today, projected to nearly double to ~13 million by 2050.
+        <span class="stat-src">Alzheimer's Association, 2025</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">Every 3.2 seconds</span>, somewhere in the world, a new dementia case is diagnosed — over 10 million new cases each year.
+        <span class="stat-src">Alzheimer's Disease International, 2024</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">~12 million</span> unpaid US dementia caregivers provide <span class="stat-num">19.2 billion hours</span> of care annually, valued at <span class="stat-num">$400 billion+</span>.
+        <span class="stat-src">Alzheimer's Association, 2024</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">Two-thirds higher</span> lifetime Alzheimer's risk for women vs. men — largely tied to the estrogen drop during perimenopause and menopause.
+        <span class="stat-src">Dr. Lisa Mosconi, Weill Cornell Women's Brain Initiative</span>
+      </div>
+    </div>
+
+    <p style="margin-top: 24px;">At the same time, we are living longer. The medical wins of the last fifty years have given us more years with our parents than any prior generation has had. That is the gift. The complication is that those extra years are not always <em>healthy</em> years — and the gap between how long we live and how long we live well has been widening.</p>
+
+    <p>You are not unusual for being in this. You are early to a wave, and the wave is still building. That is part of why I wanted to make this. The caregivers who come after us will benefit from what we figure out now, and I would like us to figure it out a little less alone.</p>
+  </div>
+</section>
+
+<!-- ============ WHAT'S INSIDE ============ -->
+<section id="inside">
+  <div class="wrap">
+    <h2>What's <span class="accent">actually inside.</span></h2>
+
+    <p>I am stubborn about not making this only one thing. What you need on a Tuesday at two in the morning is not what you need on a Sunday at noon. So CSG is several surfaces, and you can come and go between them as you need.</p>
+
+    <div class="pillars">
+      <div class="pillar">
+        <h3>The Book</h3>
+        <p>The story, told in full. The misdiagnosis, the years inside it, the chapters on beauty and on forgiving the prior generation and on the ridiculous and necessary practice of paying attention to small joys.</p>
+      </div>
+      <div class="pillar">
+        <h3>The App — CareShare</h3>
+        <p>A practical home for the practical work. Tier-based self-assessment, an SOS button for the rapid-decline moment, family matching for shared housing, accountability and wellbeing nudges.</p>
+      </div>
+      <div class="pillar">
+        <h3>The Knowledge Base</h3>
+        <p>Everything I learned, in one searchable place. Therapies, housing options, contraindications, products that helped, and the small things that became the difference between a hard day and an unbearable one.</p>
+      </div>
+      <div class="pillar">
+        <h3>The Conversations</h3>
+        <p>The podcast, the video channel, the episodes. The misdiagnosis your gut didn't trust. Touch as therapy. The day everything got harder. My voice, real guests, no filler.</p>
+      </div>
+    </div>
+
+    <p style="margin-top: 30px; font-size: 15px; color: var(--ink-soft);"><em>The book, app, knowledge base, and conversations are coming online in stages. Get the Checklist below to be the first to know when each opens.</em></p>
+  </div>
+</section>
+
+<!-- ============ COMMUNITY ============ -->
+<section id="community">
+  <div class="wrap">
+    <h2>The community is <span class="accent">not a bonus.</span></h2>
+
+    <p>I want to tell you why community is not a feature I added at the end. It is the bone structure of this whole thing.</p>
+
+    <p>I noticed, somewhere around year three, that the loneliest feeling I had was not the obvious one. It was not the late nights or the cancelled plans or the friends who slowly stopped inviting me places because I could not leave the house. The loneliest feeling was that the things I most needed to say — the unspeakable things, the <em>am I a terrible person for feeling this</em> things — had nowhere to land. What I wanted was a room of women who knew exactly what I was carrying because they were carrying it too, and where the unspoken things could be spoken without anyone flinching, looking away, or trying to fix me.</p>
+
+    <p>So I built the room.</p>
+
+    <p><strong>This is not a place for processing pain alone.</strong> The hard threads are here — the guilt, the resentment, the fear, the relief no one is allowed to admit feeling — and we will not flinch from any of them. But the same room, on the same day, also makes space for the other half of caregiving life: the breakthroughs, the small wins, the genuine pivots, the laugh-out-loud-at-the-pharmacy-counter moments, the moments of grace, the stories that turn out to be funnier than they had any right to be. We will share what we are surviving, and we will share what we are succeeding at, and we will share — often — what we are laughing about, because humor is medicine and the community knows it.</p>
+
+    <p>I want you to come away from this place believing what I have come to believe, which is that <strong>this stage of life does not have to be scary.</strong> It can be. Some weeks it absolutely will be. But it can also be the stage where you find your truest friendships, your most surprising form, your unexpected courage, and an unreasonable amount of comic material. We are going to navigate this, survive it, and succeed in it — together — and we are going to laugh more than the brochures led you to expect.</p>
+
+    <p>You do not need to be in crisis to belong here. You also do not need to wait until you are.</p>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="wrap">
+    <h2>About — <span class="accent">the longer story in brief.</span></h2>
+
+    <p>I am Natasha Shevelyov. I cared for my mother for ten years. Somewhere along the way I learned the medical system, the home-care system, the long-term care system, the alternative-medicine landscape, and a fair amount about how a woman stays a woman while doing this — most of it the hard way, all of it from inside the experience.</p>
+
+    <p>I want to be honest with you about one thing, because it matters: <strong>what I am offering here is not just my own experience written up.</strong></p>
+
+    <p>Throughout the years I was caring for my mother, the women in my closest circle — friends, peers, colleagues — were doing their own versions of the same work. We compared notes constantly. We sent each other links at midnight. We swapped names of clinicians, products, supplements, breathing techniques, the rare provider who actually listened, the housing arrangements that worked, the prayers that helped. We told each other the things we could not tell anyone else.</p>
+
+    <p>But it didn't stop with the women I knew well. The longer I was in it, the more I started to notice that <em>everywhere I went,</em> I was meeting people who were going through exactly the same thing. The woman next to me on a plane, telling me about her father. A person I met at a networking event whose story I could have finished. A colleague at a meeting whose mother was declining at home, alone. A friend-of-a-friend whose name kept coming up in stories that were variations on my own. And what was consistent — across the closest friend, the stranger on the plane, the half-told story passed through three people — was the same thing. <strong>The overwhelm. The emotional pain. The struggle. And, very often, a sense of hopelessness.</strong></p>
+
+    <p>What we kept saying to each other, over and over again, was <em>I wish someone had told me this two years ago.</em></p>
+
+    <p>At a certain point I realized: <strong>it would be wrong not to share what I learned and know and confirmed.</strong> That is the spirit in which CSG exists. Not as my solo memoir with a shop attached, but as a body of knowledge built by an extraordinary number of people I had the privilege of listening to — and which I am writing down so that the next person carrying this does not have to start from zero.</p>
+
+    <p>The truth is, the hardest part of those ten years was not what I had braced myself for. I had braced for the medical complexity, the bureaucracy, the exhaustion. What I had not been prepared for — because no one warns you about this in a way that actually prepares you — was the slow, descending spiral of watching someone I had known and loved my whole life disappear in front of me. First her memory began to thin. Then the personality I had grown up around began to shift, in small pieces and then in larger ones, until the woman in the kitchen was a woman I did not entirely recognize. The shock came first. The depression came after the shock. The hopelessness came after the depression. And underneath all of it, in a register that took me longer to identify than I would like to admit, was the quietest and worst feeling of them all: the threat of losing my own sense of self, because I could no longer find myself reflected back in the eyes of the person who had known me the longest.</p>
+
+    <p>There was one afternoon I will not forget. My mother was trying to run out of the house — toward the street, toward the stairs, toward harm she could not see and would not believe was real — and I was trying to stop her, with my body, with my voice, with whatever I had. And she was fighting me. Aggressively. Not because she had become a different person in some abstract way, but because, in that particular moment, she did not know who I was. There was no familiarity in her face when she looked at me. There was no authority for her in mine. I was a stranger standing in the way of where she had decided she needed to go, and she was going to get past me.</p>
+
+    <p>That is the moment I want you to know about, because it is the moment I understood that no resource I had been given was going to meet me here. I needed something that did not exist yet. So I started building it.</p>
+
+    <p>I am not a doctor. I am a coach and a caregiver advocate, with firsthand experience and ten years of trial and error to show for it — paired with the wisdom of the women in my circle, the wider witness of an entire generation of caregivers I have met along the way, and now the women in this community, who have lived their own versions of it. We will figure the rest of this out together.</p>
+  </div>
+</section>
+
+<!-- ============ CTA / EMAIL CAPTURE ============ -->
+<section id="checklist" class="cta-section">
+  <div class="wrap">
+    <h2 style="text-align:center;">The Root-Cause <span class="accent">Investigation Checklist.</span></h2>
+
+    <p>If you take only one thing from this site, take this. It is the checklist I wish I had had at the beginning, written in plain language, free, no spam, and one short letter from me about what to do with what you find.</p>
+
+    <p>Inside, I walk you through the conditions that can mimic cognitive decline and are often missed — vitamin and hormone deficiencies, medication interactions, thyroid disease, structural issues like the one in my mother's spine, urinary tract infections that present as sudden confusion, prior head injuries, blood pressure dysregulation, blood sugar problems, and several more. The questions to ask the neurologist. The tests to confirm have been done. The second-opinion script that worked for me when I needed it. And what to do when the workup is thorough and the diagnosis holds up.</p>
+
+    <p>This is not a campaign against doctors. It is a campaign for thorough investigation.</p>
+
+    <!--
+      ===========================================================
+      EMAIL CAPTURE FORM — REPLACE THIS WITH YOUR EMAIL SERVICE
+      ===========================================================
+      The form below is service-agnostic. To connect it to an
+      email provider, replace the `action` URL and any required
+      hidden fields. Common providers:
+
+      • Kit (formerly ConvertKit) — copy your form's HTML embed
+        and replace this entire <form> block.
+      • MailerLite — same: embed their HTML form code here.
+      • Mailchimp — same.
+      • Substack — they don't offer a custom form like this; use
+        their hosted form or move email capture to a different tool.
+
+      The setup guide walks you through this step-by-step.
+    -->
+    <form class="email-form" action="https://example.com/replace-this" method="POST" aria-label="Get the Root-Cause Investigation Checklist">
+      <label for="email">Your email address</label>
+      <input type="email" id="email" name="email" required placeholder="you@example.com" autocomplete="email">
+
+      <!-- Honeypot field — hidden from humans, catches spam bots -->
+      <div class="hp" aria-hidden="true">
+        <label for="website">Leave this empty</label>
+        <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+      </div>
+
+      <button type="submit">Send me the Checklist →</button>
+      <p class="note">One short letter from me. No spam. Unsubscribe any time.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="footer-inner">
+    <p><strong>The Caregiver's Survival Guide</strong></p>
+    <p>By Natasha Shevelyov · A coach and caregiver advocate with firsthand experience.</p>
+    <p class="small">
+      CSG is not a medical service. The content on this site reflects my personal experience as a caregiver, the experiences of the women in my circle, and the experiences of the CSG community. It is not medical advice. Please speak with qualified clinicians who know your loved one's specific situation before changing any treatment, medication, or supplement.
+    </p>
+    <p class="small">© 2026 Natasha Shevelyov / The Caregiver's Survival Guide. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
