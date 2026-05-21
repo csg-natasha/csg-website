@@ -487,34 +487,16 @@
 
     <!--
       ===========================================================
-      EMAIL CAPTURE FORM — REPLACE THIS WITH YOUR EMAIL SERVICE
+      EMAIL CAPTURE FORM — Kit (ConvertKit) embed
       ===========================================================
-      The form below is service-agnostic. To connect it to an
-      email provider, replace the `action` URL and any required
-      hidden fields. Common providers:
+      This is the live Kit form "Root-Cause Investigation Checklist"
+      (data-uid 835d85fc01). New subscribers receive the checklist
+      PDF via Kit's double opt-in incentive email.
 
-      • Kit (formerly ConvertKit) — copy your form's HTML embed
-        and replace this entire <form> block.
-      • MailerLite — same: embed their HTML form code here.
-      • Mailchimp — same.
-      • Substack — they don't offer a custom form like this; use
-        their hosted form or move email capture to a different tool.
-
-      The setup guide walks you through this step-by-step.
+      To swap in a different Kit form later, just replace the
+      <script> tag below with the new embed code from Kit.
     -->
-    <form class="email-form" action="https://example.com/replace-this" method="POST" aria-label="Get the Root-Cause Investigation Checklist">
-      <label for="email">Your email address</label>
-      <input type="email" id="email" name="email" required placeholder="you@example.com" autocomplete="email">
-
-      <!-- Honeypot field — hidden from humans, catches spam bots -->
-      <div class="hp" aria-hidden="true">
-        <label for="website">Leave this empty</label>
-        <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
-      </div>
-
-      <button type="submit">Send me the Checklist →</button>
-      <p class="note">One short letter from me. No spam. Unsubscribe any time.</p>
-    </form>
+    <script async data-uid="835d85fc01" src="https://the-caregiver-s-survival-guide.kit.com/835d85fc01/index.js"></script>
   </div>
 </section>
 
